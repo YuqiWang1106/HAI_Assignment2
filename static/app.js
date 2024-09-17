@@ -251,7 +251,7 @@ function sendMessage() {
     const prompt = constructPromptForVegaLite(parsedData, userMessage);
 
     // Send it to the server
-    fetch("http://localhost:8000/generate_chart", {
+    fetch("https://hai-assignment2.onrender.com/generate_chart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt: prompt }),
@@ -319,7 +319,7 @@ function sendMessage() {
                     const descriptionPrompt = constructPromptForDescription(parsedData, userMessage);
 
                     // 发送到服务器，获取图表说明
-                    fetch("http://localhost:8000/generate_description", {
+                    fetch("https://hai-assignment2.onrender.com/generate_description", {
                         method: "POST",
                         headers: { "Content-Type": "application/json" },
                         body: JSON.stringify({ prompt: descriptionPrompt }),
