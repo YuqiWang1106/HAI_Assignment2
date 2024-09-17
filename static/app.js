@@ -338,7 +338,7 @@ function sendMessage() {
                 } else {
                     // 图表渲染失败，显示错误消息，不请求图表说明
                     const descriptionDiv = document.getElementById(`description-${uniqueChartId}`);
-                    descriptionDiv.textContent = "VegaLite解析错误，请尝试重新提问。";
+                    descriptionDiv.textContent = "Sorry, the Vega-Lite specification is ill-formed, please send your request again";
                 }
             }); 
                   
@@ -358,7 +358,7 @@ function sendMessage() {
                 </div>
                 <div class='ai-flex-container aiMessageContainer'>
                     <div class='messageText'>
-                    不好意思，我无法回答这个问题。
+                    Sorry, I cannot answer the question that is not relavent to the dataset, please send your request again
                     </div>          
                 </div>
                 </div>
@@ -387,7 +387,7 @@ function sendMessage() {
             </div>
             <div class='ai-flex-container aiMessageContainer'>
                 <div class='messageText'>
-                    请上传数据集
+                    Please upload a dataset
                 </div>          
             </div>
         </div> `;
