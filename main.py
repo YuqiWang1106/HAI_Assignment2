@@ -68,15 +68,6 @@ async def reply_message(prompt: Prompt):
 
 
 
-
-        # if not vega_lite_spec:
-        #     # AI 返回了空的 JSON 对象
-        #     return {"vegaLiteSpec": None}
-        # else:
-        #     return {"vegaLiteSpec": vega_lite_spec}
-
-
-
     except Exception as e:
         # Log the exception for debugging
         print("JSON decode error:", str(e))

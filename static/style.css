@@ -46,7 +46,7 @@
   padding-top: 8px;
   border-radius: 10px; /* 圆角边框 */
   margin-right: 15px; /* 右边留出空间给三角形 */
-  height: 44px;
+  height: auto;
 }
 
 .messageContainer:after {
